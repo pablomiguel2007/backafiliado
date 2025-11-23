@@ -23,8 +23,8 @@ let usersDB = [
   }
 ];
 
-const JWT_SECRET = process.env.JWT_SECRET || "sua_chave_secreta_muito_segura";
-const RENDER_URL = process.env.RENDER_URL; // Ex: https://backafiliado-2.onrender.com
+const JWT_SECRET = process.env.JWT_SECRET || "pablomiguel2007";
+const RENDER_URL = process.env.https://backafiliado-2.onrender.comL; // Ex: https://backafiliado-2.onrender.com
 
 // Verifica e Configura Mercado Pago
 if (!process.env.MP_ACCESS_TOKEN) {
@@ -172,7 +172,7 @@ app.post("/plans/pix", authMiddleware, async (req, res) => {
             plan_type: plan
         },
         // URL para onde o Mercado Pago enviará a notificação
-        notification_url: `${RENDER_URL}/mp/webhook`, 
+        notification_url: `${https://backafiliado-2.onrender.com}/mp/webhook`, 
         // Em ambiente de produção, configure o URL de retorno (back_urls)
     };
 
@@ -248,3 +248,4 @@ const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);
 });
+
